@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="es-MX">
+    <head>
+        <meta charset="UTF-8">
+        <meta author="Antony Ruiz">
+        <meta description="Es una pagina web de prueba">
+        <meta keywords="html, aplicacion web">
+        <title>Mi primer pagina</title>
+        <link rel="shortcut icon" href="./static/imagen/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./static/css/Fstyle.css" type="text/css">
+        <link rel="stylesheet" href="./static/css/Respuestas.css" type="text/css">
+    </head>
+    <body>
+    <div class="encabezado">
+        <header>
+            <img src="./static/imagen/Banner.jpeg">
+        </header>
+    </div>
+
+   <h2>Instrumentos en venta</h2>
+    <div class="container">
+        <form action="{{url_for('Guardar_producto')}}" method="POST">
+       <b><p>REGISTRATE</p></b>
+            <div style="opacity: 0,7;">
+               <label for="Nombre">Nombre del producto:</label>
+               <input type="text" id="Nombre" name="Nombre" placeholder="Producto.." required>
+            </div>
+   <div style="opacity: 0,7;">
+      <label for="Precio">Precio:</label>
+      <input type="text" id="Precio" name="Precio" placeholder="Ingresar el precio.." required>
+   </div>
+
+     <div style="opacity: 0,7;">
+      <label for="Descripcion">Descripción:</label>
+      <textarea id="Descripcion" name="Descripcion" placeholder="Escribe la descripción.." style="height:200px"></textarea>
+     </div>
+       <input type="submit" value="Enviar">
+
+     </form>
+     </div>
+    <div>
+        <h1 class="titulo">Respuestas </h1>
+
+    </div>
+    <div>
+      <table>
+          <thead>
+             <tr>
+                 <td>Nombre</td>
+                 <td>Precio</td>
+                 <td>Descripción</td>
+                 <td>Editar</td>
+                 <td>Eliminar</td>
+             </tr>
+          </thead>
+
+          <tbody>
+          {%for producto in productos %}
+          <tr>
+                 <td>{{producto.1}}</td>
+                 <td>{{producto.2}}</td>
+                 <td>{{producto.3}}</td>
+                 <td><a href="/consultar_producto/{{producto.0}}">Editar</a></td>
+                 <td><a href="/eliminar_producto/{{producto.0}}">Eliminar</a></td>
+          </tr>
+
+          {% endfor %}
+
+          </tbody>
+
+      </table>
+
+   <div class="pie">
+        <footer>
+            <p>Universidad de Tula Tepeji</p>
+        </footer>
+      </div>
+   </div>
+
+</body>
+</html>

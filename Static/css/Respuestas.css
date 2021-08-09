@@ -1,0 +1,24 @@
+table {
+   width: 70%;
+   border-collapse: separate;
+   border-spacing: 5px;
+   background: linear-gradient(to bottom, #EFBA84, blue 1%, green);
+   border-collapse: expression("separate", cellSpacing = "5px");
+   margin: auto;
+}
+th, td {
+   width: 25%;
+   text-align: center;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-spacing: 0;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+   background: #fff;
+   color: #000;
+}
+caption {
+   padding: 0.3em;
+}
+

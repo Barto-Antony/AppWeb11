@@ -1,10 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primer pagina</title>
+    <meta author="Antony Ruiz">
+    <meta description="Es una pagina web de prueba">
+    <meta keywords="html, aplicacion web">
+    <title>Mi primera fotografia</title>
+     <link rel="shortcut icon" href="./static/imagen/favicon.ico" type="image/x-icon">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        div.header,section,article,fotter{
+        display: block;
+        }
+        body{
+        text-align: center;
+        font-family: Serif, Helvetica, sans-serif;
+        }
+        .agrupar{
+        width: 96%;
+        margin: 15px auto;
+        }
+        .encabezado{
+            display: block;
+            width: 100%;
+            height: 350px;
+            background-color: #99ff99;
+        }
+        .encabezado img{
+            width: 100%;
+            height: 350px;
+            opacity: 0.9;
+
+        }
+        .encabezado p{
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        text-align: center;
+        font-size: 150px;
+        font-family: Courier;
+        }
+        .menu{
+           background-color: #3672EB;
+           width: 100%;
+           height: 120px;
+           text-align: left ;
+
+        }
+        .menu li{
+            display: inline-block;
+            font: bold 35px Serif;
+            padding: 5px;
+            list-style:none;
+
+        }
+        .menu li a{
+           color: black;
+           text-decoration: none;
+        }
+        .cont_seccion{
+            display: table;
+            width: 100%;
+        }
+        .cont_seccion section{
+             display: table;
+             width: 100%
+             height: 100px;
+             background-color: #B8B4AB;
+        }
+        .cont_seccion article{
+             float: left;
+             margin: 5px;
+             width: 100%;
+             background-color: #B1A0EB;
+        }
+        .cont_seccion p{
+            font-size: 30px;
+            text-align: justify;
+            color: black;
+            padding: 3px;
+
+        }
+        .cont_seccion img{
+            width: 50%;
+            height: 700px;
+        }
+        .cont_seccion h1{
+            font-size:30px;
+        }
+
+        .pie{
+           background-color: #3672EB;
+           color: white;
+           font-size: 27px;
+           width: 100%;
+           height: 70px;
+
+        }
+        ul li {
+          background: none;
+          margin: 10px;
+          text-align: center;
+          font-size: 25px;
+          color: black;
+          text-align: justify;
+        }
+
+
+    </style>
+    <script>
+
+    </script>
+
 </head>
-<body>
-<p>Hola soy tu pagina html</p>
+    <body>
+      <div class='agrupar'>
+          <div class="encabezado">
+              <header>
+                  <img src="./static/imagen/Musica.jpg">
+                 <b><p>SIENTE LA MÚSICA</p></b>
+              </header>
+          </div>
+          <div class="menu">
+
+              <nav>
+                  <ul>
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Acerca de la Música</a></li>
+                      <li><a href="#">Empezando en la música</a></li>
+                      <li><a href="/rejilla">Instrumentos</a></li>
+                      <li><a href="/Formulario">Productos</a></li>
+                      <li><a href="/Bootstrap">Bootstrap</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="cont_seccion">
+          <section>
+              <h1> ¿Qué es la música? </h1>
+              <article>
+                 <br> <p>Se conoce como música a la combinación ordenada de ritmo, melodía y armonía que resulta agradable a los oídos. Por su carácter inmaterial, la música se considera un arte temporal o del tiempo, al igual que la literatura.
+                        En el sentido restrictivo, la música es el arte de coordinar y transmitir efectos sonoros, armoniosos y estéticamente válidos, los cuales son generados a través de la voz o de instrumentos musicales.</p>
+                       <br><p>La música es una manifestación artística y cultural de los pueblos, de manera que adquiere diversas formas, valores estéticos y funciones según su contexto. A la vez, es uno de los medios por el cual un individuo expresa sus sentimientos.
+                        La persona que pone en práctica la música o la ejecuta por medio de un instrumento se llama músico.</p>
+                  <img src="./static/imagen/Disco.jpeg">
+              </article>
+                  <h1> ¿Algunos tipos de música?</h1>
+                    <article>
+                        <p>La música puede clasificarse de muchas maneras, bien sea de acuerdo a la forma, instrumentación, función, origen o estilo y contexto.
+                          Un criterio bastante amplio de clasificación es el que distingue entre música vocal, destinada para ser cantada, y música instrumental, destinada a ser interpretada por instrumentos estrictamente.
+                          La clasificación más generalizada que existe es la que distingue música académica y música popular.</p>
+                          <br><p>En ambas hay expresiones tanto de la música cantada como instrumental.
+                          Sin embargo, la clasificación entre música académica y música popular hoy resulta bastante compleja, pues muchos géneros de la música popular se han dejado influenciar por las tendencias académicas y viceversa. De hecho, en la actualidad la música popular ha pasado a formar parte de los programas educativos de las academias y han alcanzado gran reconocimiento de las elites.
+                          De cualquier manera, en el imaginario social se sigue distinguiendo entre ambos.</p>
+                         <img src="./static/imagen/Cuarto.jpeg">
+                        <b><p>Conozcamos algunos elementos distintivos:</p></b>
+                        <nav>
+                          <ul>
+                              <li>Música académica</li>
+                              <li>Música sacra</li>
+                              <li>Música dramática</li>
+                              <li>Música incidental</li>
+                              <li>Música para la contemplación y el entretenimiento</li>
+                              <li>Música popular</li>
+                              <li>Música folclórica</li>
+                          </ul>
+                       </nav>
+                  </article>
+          </section>
+
+      </div>
+      <div class="pie">
+        <footer>
+            <p>Universidad de Tula Tepeji</p>
+        </footer>
+      </div>
+  </div>
+
 </body>
 </html>
