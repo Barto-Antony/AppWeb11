@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 #Creamos un objeto de tipo flask
 app = Flask(__name__, static_url_path='/static')
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 conn = psycopg2.connect(
     host='ec2-52-5-1-20.compute-1.amazonaws.com',
     database='dn808n9aep0cc',
