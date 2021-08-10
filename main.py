@@ -32,7 +32,7 @@ app = Flask(__name__, static_url_path='/static')
 def index_html():
     return render_template("index.html")
 @app.route("/rejilla")
-def rejillas_html():
+def rejilla_html():
     return render_template("html_rejilla.html")
 
 @app.route("/Bootstrap")
