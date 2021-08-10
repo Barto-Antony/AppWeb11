@@ -31,6 +31,7 @@ app = Flask(__name__, static_url_path='/static')
 #Creamos funciones para llamar el index(pagina principal)
 def index_html():
     return render_template("index.html")
+
 @app.route("/rejilla")
 def rejilla_html():
     return render_template("html_rejilla.html")
