@@ -16,4 +16,3 @@ pycparser==2.20
 PyMySQL==1.0.2
 SQLAlchemy==1.4.22
 Werkzeug==2.0.0
-streamlit
