@@ -6,6 +6,7 @@ Flask==2.0.1
 Flask-MySQL==1.5.2
 Flask-SQLAlchemy==2.5.1
 greenlet==1.1.1
+gunicorn==19.9.0
 itsdangerous==2.0.0
 Jinja2==3.0.0
 MarkupSafe==2.0.0
