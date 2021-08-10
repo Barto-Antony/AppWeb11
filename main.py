@@ -1,6 +1,6 @@
 #Importacion de librerias
 import psycopg2
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect
 #from flaskext.mysql import MySQL
 from flask_sqlalchemy import SQLAlchemy
 
@@ -25,7 +25,7 @@ conn = psycopg2.connect(
 #pip install PYMYSQL[rsa]
 
 #mysql.init_app(app)
-app = Flask(__name__, static_url_path='/static')
+
 #Creacion de una ruta raiz a pagina principal
 @app.route("/")
 #Creamos funciones para llamar el index(pagina principal)
