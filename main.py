@@ -29,7 +29,7 @@ app = Flask(__name__, static_url_path='/static')
 #Creacion de una ruta raiz a pagina principal
 @app.route("/")
 #Creamos funciones para llamar el index(pagina principal)
-def index():
+def index_html():
     return render_template("index.html")
 @app.route("/rejilla")
 def rejillas_html():
